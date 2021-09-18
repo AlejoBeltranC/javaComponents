@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Resources/Style.css"/>
+    <script type="text/javascript" src="Resources/perfonmace.js"></script>
+    <link rel="icon" href="viajes.png">
+
+    <title>Cabañas</title>
+</head>
+<body>
+    <!--Form Contact-->
+    <section class="section_main">
+       <form name="form1" action="/formulario/Servlet" method="post" 
+              onsubmit="return validation(this)">
+            <label >Nombres        *</label><br>
+            <input name = "userName" type="text" placeholder="Persona Encargada">
+            <br>
+            <label >Apellidos      *</label><br>
+            <input name = "userLastName" type="text" placeholder="Persona Encargada">
+            <br>
+            <label >Identificaci&oacute;n *</label><br>
+            <input name="identification" type="text" placeholder="Cedula de ciudadania /  Nit">
+            <br>
+            <label >Fecha llegada  *</label>
+            <br>
+            <input type="date" name="start" >
+            <br>
+            <label >Fecha Salida  (*)</label>
+            <br>
+            <input type="date" name="end" >
+            <br>
+            <label >Cantidad de personas (*)</label>
+            <select name="people">
+                <option value="value1">1-2</option>
+                <option value="value2" selected>3-5</option>
+                <option value="value3">6-9</option>
+            </select>
+            <br>
+            <label >Macotas *</label><br>
+            Ninguno<input type="checkbox" name="pet" value="Ninguno">
+            Perro<input type="checkbox" name="pet" value="perro">
+            Gato<input type="checkbox" name="pet" value="Gato">
+            Conejo<input type="checkbox" name="pet" value="Conejo">
+            Otro<input type="checkbox" name="pet" value="Otro">
+            <br>
+            <label >Comentarios</label><br>
+            <textarea name="comments"  cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit" value="solicitar">
+            
+        </form>
+
+    </section>
+    
+    
+</body>
+</html>

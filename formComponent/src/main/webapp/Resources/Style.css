@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.section_main{
+    width: 500px;
+    height: 450px;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-left: 300px;
+}
+form{
+    width: 499px;
+    height: 449px;
+    
+
+}
+label{
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
